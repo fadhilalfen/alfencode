@@ -1,0 +1,12 @@
+h1
+{
+    color: blue
+}
+.pengumuman
+{
+    width: 800px;
+    height: 200px;
+    background: #cccccc;
+    margin: 0 auto;
+    text-align: center
+}

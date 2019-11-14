@@ -1,0 +1,140 @@
+body
+{
+    background: gainsboro;
+    background-repeat: no-repeat
+}
+.home
+{
+    position: relative;
+}
+.container
+{
+    width: 800px;
+    margin: 0 auto;
+
+}
+.sidebar
+{
+    height:800px;
+    margin: 0 auto;
+    position: absolute;
+}
+.header
+{
+    background-color: #fff;
+    min-height: 50px;
+    margin: 5px;
+    text-align: center;
+    border: 5px solid #ccc;
+}
+.content
+{
+    background-color: #eee;
+    min-height: 700px;
+    overflow: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.footer
+{
+    background-color: #eee;
+    min-height: 50px;
+    margin: 5px;
+    padding: 10px 20px;
+    text-align: center
+}
+.sidebar1
+{
+    background-color: #fff;
+    min-width: 200px;
+    min-height: 963px;
+    padding: 5px 10px;
+    text-align: center
+}
+.sidebar1 img
+{
+    width: 150px;
+    padding: 25px;
+    padding-bottom: 0;
+}
+.logo img
+{
+width: 200px;
+}
+.menu ul
+{
+    padding: 0;
+}
+.menu ul li
+{
+    display: inline-block;
+    position: relative;
+    font-size: 30vw
+}
+.menu ul li a
+{
+    text-decoration: none;
+    padding: 0px 20px 0px ;
+    border: 1px dashed red;
+}
+.post
+{
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    float: left;
+}
+.post img
+{
+    width: 100%;
+}
+ul.sub
+{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: left;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: none;
+}
+ul.sub li
+{
+    display: block;
+    border: none;
+    text-align: left;
+}
+ul.sub li a
+{
+    display: block;
+    padding: 0px 20px 0;
+    border: none
+}
+.menu ul li:hover ul.sub
+{
+    display: block;
+}
+.content h1
+{
+    font-style: oblique;
+    text-align: center
+}
+.content h4
+{
+    font-style: oblique;
+    text-align: center
+}
+.content p
+{
+    text-indent: 60px;
+}
+.content img
+{
+    width: 100%;
+    text-align: center
+
+}
