@@ -11,12 +11,14 @@ body
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 5px;
     border: 10px dashed #fff;
-    text-align: center;
+    text-align: left;
 }
 .biodata img
 {
     width: 200px;
-    padding: 2px
+    padding: 2px;
+    border: 1px solid #fff;
+    align-content: center
 }
 .biodata li
 {
@@ -32,4 +34,17 @@ body
     float: right;
     overflow: hidden;
     border: 10px dashed #fff;
+    text-align: center
+}
+.contact
+{
+    width: 50px;
+    background: #fff;
+    float: right;
+    border: 3px dashed #eeeeee;
+    padding: 3px;
+}
+.contact img
+{
+    width: 100%;
 }

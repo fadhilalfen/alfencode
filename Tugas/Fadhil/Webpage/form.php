@@ -1,4 +1,5 @@
 <?php
+
 $var1 = $_POST ['nama'];
 
 if ($var1 == "Hanif Inamullah") {
@@ -8,4 +9,4 @@ if ($var1 == "Hanif Inamullah") {
     # Maaf
     echo "Maaf, anda tidak bisa mengakses data ini.";
 }
- 
+?>
