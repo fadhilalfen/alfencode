@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Library of Congress</title>
+        <meta name="index" content="LoC">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/stylesheets/base.css">
+        <link rel="icon" href="static/home/images/favicon/icons8-monitor-50.png" type="image/x-icon/">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="static/js/popover.js"></script>
+        <style>
+           
+           #loading{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: solid 5px #ccc;
+  border-radius: 100%;
+  border-top-color: #FFD700 ;
+  border-right-color:#FF4500 ;
+  border-bottom-color: #FFA500 ;
+  border-left-color:#FF8C00 ;
+  
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right:0;
+  animation: putar 2s linear infinite;
+}
+@keyframes putar{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+#pop {
+    width: 400px;
+    height: 400px;
+    border: 2px solid gray;
+    bottom: 10%;
+    right: 38%;
+    position:fixed;
+    border-radius:15px;
+    box-shadow: inset -4px rgba(0,0,0,9);
+    background-color: rgba(0,0,0,9);
+    margin: 0 auto;
+    opacity: 0.7;
+}
+#close{
+    margin: 0 auto;
+    right:5;
+    top: 5;
+    float: right;
+}
+h2{text-decoration: none;
+    font-size: 30px;
+    color: bisque;
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+}
+p{
+font-size: 20px;
+padding: 10px;
+color: blue;
+font-weight: 900;
+}
+
+        </style>
+    </head>
+    <body id="boody">
+
+       <div id="loading"></div>
+       
+        </div>
+        <section class="programs">
+                <div class="header-logo">
+                        <a href="#">
+                            <img src="https://www.loc.gov/static/images/logo-loc-new-branding.svg" alt="" />
+            <h2>Programs, services</h2>
+            <ul class="programs-items">
+                <li><a href="managers.html">Managers</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="indexdemo.html">Try Demo</a></li>
+            </ul>
+            <div class="programs-items-additional-wrapper"
+                id="more-programs-container"
+                aria-labelledby="more-programs-button">
+                <h2 tabindex="0"
+                    role="heading"
+                    id="more-programs-header">More Programs, services</h2>
+                <ul class="programs-items-additional">
+                    <li><h3>Featured Programs</h3>
+                        <ul>
+                            <li><a href="https://www.loc.gov/folklife/">American Folklife Center</a></li>
+                            <li><a href="https://www.loc.gov/vets/">Veterans History Project</a></li>
+                            <li><a href="https://www.wdl.org">World Digital Library</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="programs-items-additional">
+                    <li><h3>Featured Topics</h3>
+                        <ul>
+                            <li><a href="https://www.loc.gov/nls/">Braille &amp; Talking Books</a></li>
+                            <li><a href="https://www.loc.gov/poetry/">Poetry &amp; Literature</a></li>
+                            <li><a href="http://www.read.gov/cfb/">Literacy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="programs-items-additional">
+                    <li><h3>Especially For</h3>
+                        <ul>
+                            <li><a href="https://www.loc.gov/librarians/">Librarians</a></li>
+                            <li><a href="https://www.loc.gov/loc/kluge/">Scholars</a></li>
+                            <li><a href="/families/">Kids &amp; Families</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button class="more-programs"
+                id="more-programs-button"
+                aria-controls="more-programs-container"
+                ><span>More programs, services</span>
+                <i class="icon icon-angle-down"></i></button>
+        </section>
+        <script>
+                jQuery(function($){
+                    // programs section
+                    $('.more-programs').click(function() {
+                        if ($('.programs-items-additional-wrapper').hasClass('programs-items-additional-active')) {
+                
+                            $('.programs-items-additional-wrapper')
+                                .removeClass('programs-items-additional-active')
+                                .attr('aria-hidden', 'true');
+                            $('.more-programs').attr('aria-expanded', 'false');
+                            $('.more-programs i').switchClass('icon-angle-up', 'icon-angle-down', 50);
+                            UX.interaction($(this), 'Programs and Services', 'Collapse', '');
+                        } else {
+                
+                            $('.programs-items-additional-wrapper')
+                                .addClass('programs-items-additional-active')
+                                .attr('aria-hidden', 'false');
+                            $('.more-programs').attr('aria-expanded', 'true');
+                            $('.more-programs i').switchClass('icon-angle-down', 'icon-angle-up', 50);
+                            $('#more-programs-header').focus();
+                            UX.interaction($(this), 'Programs and Services', 'Expand', '');
+                        }
+                    });
+                
+                    $('.programs-items li a').click(function() {
+                        var label = $(this).text().trim();
+                        UX.interaction($(this), 'Programs and Services', 'Click', label);
+                    });
+                    $('.programs-items-additional li a').click(function() {
+                        var label = $(this).text().trim();
+                        UX.interaction($(this), 'More Programs', 'Click', label);
+                    });
+                });
+                </script>
+        
+        </div>
+        <div class="containers">
+        <div class="container-iframe">
+            <iframe width="640" height="315" src="https://www.youtube.com/embed/Xokg6k010dc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       
+        
+        
+        <div class="container-video">
+                <video width="640" height="315" loop autoplay muted><source src="static/home/images/index/The Library of Congress Is a Library for You.mp4" type="video/mp4"></video w>
+        </div>
+         </div>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-container">
+               
+            </div>
+            <div id="pop">
+                <button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+            <h2>Welcome!</h2>
+            <p>Before exploring our website, we remind you to check your connection to gain more exprerience.</p>
+            <p>Thank you!</p>
+        </footer>
+        <style>
+           
+        </style>
+        
+
+        <script type="text/javascript">
+       var loading = document.getElementById('loading');
+
+       window.addEventListener('load', function(){
+           loading.style.display="none"
+       });
+        </script>
+    </body>
+</html>

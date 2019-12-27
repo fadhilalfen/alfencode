@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/stylesheets/aboutus.css">
+<link rel="stylesheet" href="static/stylesheets/base.css">
+<link rel="icon" href="static/home/images/favicon/icons8-monitor-50.png" type="image/x-icon/">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/popover.js"></script>
+</head>
+<body>
+	<!--Fina Idamatussilmi-->
+	<!--Syahrani Nur Azizah-->
+	<div id="loading"></div>
+       
+</div>
+<section class="programs">
+        <div class="header-logo">
+                <a href="index.html">
+                    <img src="https://www.loc.gov/static/images/logo-loc-new-branding.svg" alt="" />
+    <h2>Programs, services</h2>
+    <ul class="programs-items">
+        <li><a href="managers.html">Managers</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="indexdemo.html">Try Demo</a></li>
+    </ul>
+    <div class="programs-items-additional-wrapper"
+        id="more-programs-container"
+        aria-labelledby="more-programs-button">
+        <h2 tabindex="0"
+            role="heading"
+            id="more-programs-header">More Programs, services</h2>
+        <ul class="programs-items-additional">
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.5433611676176!2d-77.00690768510042!3d38.88868815506334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feef68ef83a4d%3A0x46cbb296f4de3eec!2sLibrary%20of%20Congress!5e0!3m2!1sen!2sid!4v1577426758044!5m2!1sen!2sid" width="1300" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <button class="more-programs"
+        id="more-programs-button"
+        aria-controls="more-programs-container"
+        ><span>More programs, services</span>
+        <i class="icon icon-angle-down"></i></button>
+</section>
+<script>
+        jQuery(function($){
+            // programs section
+            $('.more-programs').click(function() {
+                if ($('.programs-items-additional-wrapper').hasClass('programs-items-additional-active')) {
+        
+                    $('.programs-items-additional-wrapper')
+                        .removeClass('programs-items-additional-active')
+                        .attr('aria-hidden', 'true');
+                    $('.more-programs').attr('aria-expanded', 'false');
+                    $('.more-programs i').switchClass('icon-angle-up', 'icon-angle-down', 50);
+                    UX.interaction($(this), 'Programs and Services', 'Collapse', '');
+                } else {
+        
+                    $('.programs-items-additional-wrapper')
+                        .addClass('programs-items-additional-active')
+                        .attr('aria-hidden', 'false');
+                    $('.more-programs').attr('aria-expanded', 'true');
+                    $('.more-programs i').switchClass('icon-angle-down', 'icon-angle-up', 50);
+                    $('#more-programs-header').focus();
+                    UX.interaction($(this), 'Programs and Services', 'Expand', '');
+                }
+            });
+        
+            $('.programs-items li a').click(function() {
+                var label = $(this).text().trim();
+                UX.interaction($(this), 'Programs and Services', 'Click', label);
+            });
+            $('.programs-items-additional li a').click(function() {
+                var label = $(this).text().trim();
+                UX.interaction($(this), 'More Programs', 'Click', label);
+            });
+        });
+		</script>
+		<div class="container-maps">
+		<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.5433611676176!2d-77.00690768510042!3d38.88868815506334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feef68ef83a4d%3A0x46cbb296f4de3eec!2sLibrary%20of%20Congress!5e0!3m2!1sen!2sid!4v1577426758044!5m2!1sen!2sid" width="1300" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		<br><br><br><br><br><br>
+		<br>
+		<br>
+		<br>
+		<br>
+			<div class="grid-container">
+				<div class="grid-item item1"><h2>LOC's Back To The Past</h2>
+		
+					<h5>The Early Years: Thomas Jefferson's Impact on the Library of Congress</h5>
+					<p> One of Jefferson's first acts in relation to the library was to make the Librarian of Congress a government-appointed position. The first person appointed this role was John J. Beckley, who received $2.00 a day in payment, which today would equal about $36.00. Beckley and subsequent librarians also served as clerk for the House of Representatives. The Library of Congress was burned during the War of 1812. To help rebuild the library, the government purchased Jefferson's private collection of nearly 7,000 books.</p>
+					<h5><strong>The Civil War Period and Beyond</strong></h5>
+					<p>The library caught fire again during the Civil War. Nearly all of Jefferson's collection and many of the books acquired since the War of 1812 were lost. This changed after the Civil War, as both the government and population expanded. Due in large part to efforts by librarian Ainsworth Rand Spofford, Congress began viewing the library as a national library.
+					What came next was a period of rapid expansion and growth for both the library proper and the collection itself. Making it a priority to house American publications and copyright registrations took up location there. By 1900, another building had been constructed to accommodate the much increased collection. It also had become the primary location for legislative documents and laws for the United States.</p>
+					<h5><strong>The 20th Century: Growth, Change, and Good Books</strong></h5>
+					<p>In the 20th century, the library continued to increase the amount of services and texts that it offered to the public and continued to maintain its commitment to nationalism by housing the Declaration of Independence as well as the Constitution. Since then, another building was constructed, the two older existing buildings were renovated and modernized, and in 2007 a new National Audio-Visual Conservation Center was constructed. In 2016, Carla Hayden was named the most recent librarian of Congress and is the first woman as well as the first African American to hold the position.</p></div>
+				<div class="grid-item item2"><h2>What is it?</h2>
+					<p>The Library of Congress is the nation's oldest federal cultural institution and serves as the research arm of Congress. It is also the largest library in the world, with millions of books, recordings, photographs, maps and manuscripts in its collections and the world's largest collection of legal materials, films, maps, sheet music and sound recordings. The Library's mission is to support the Congress in fulfilling its constitutional duties and to further the progress of knowledge and creativity for the benefit of the American people.</p></div>
+				<div class="grid-item item3"><left><h2><p><em>Library of Congress Buildings</em></p></h2></left>
+					<p>The Library of Congress is physically housed in three buildings on Capitol Hill and a conservation center in rural Virginia. The library's Capitol Hill buildings are all connected by underground passageways, so that a library user need pass through security only once in a single visit. The library also has off-site storage facilities for less commonly requested materials.</p>
+					
+					<img src="static/home/images/aboutus/Thomas_Jefferson_Building_Aerial_by_Carol_M._Highsmith.jpg" alt="Bangunan Thomas Jefferson Building Aerial by Carol M" height="95px">
+					<h3>Thomas Jefferson Building</h3>
+						<p>The Thomas Jefferson Building is located between Independence Avenue and East Capitol Street on First Street SE. It first opened in 1897 as the main building of the library and is the oldest of the three buildings. Known originally as the Library of Congress Building or Main Building, it took its present name on June 13, 1980.</p>
+					
+					<br>
+					<img src="static/home/images/aboutus/John_Adams_Building_(31274182293).jpg" alt="Bangunan John Adams Building" height="95px">
+					<h3>John Adams Building</h3>
+					<p>The John Adams Building is located between Independence Avenue and East Capitol Street on 2nd Street SE, the block adjacent to the Jefferson Building. The building was originally known as The Annex to the Main Building, which had run out of space. It opened its doors to the public January 3, 1939.</p>
+					</br>
+					
+					<br>
+					<img src="static/home/images/aboutus/Madison_Building_by_Carol_M._Highsmith.jpg" alt="Bangunan James Madison Memorial Building" height="100px" >
+					<h3>James Madison Memorial Building</h3>
+					<p>The James Madison Memorial Building is located between First and Second Streets on Independence Avenue SE. The building was constructed from 1971 to 1976, and serves as the official memorial to President James Madison. The Madison Building is also home to the Mary Pickford Theater, the "motion picture and television reading room" of the Library of Congress. The theater hosts regular free screenings of classic and contemporary movies and television shows</p>
+					</br>
+					
+					<br>
+					<img src="static/home/images/aboutus/Packard-campus-library-of-c.jpg" alt="Bangunan Packard Campus for Audio-Visual Conservation" height="120px" >
+					<h3>Packard Campus for Audio-Visual Conservation</h3>
+					<p>The Packard Campus for Audio-Visual Conservation is the Library of Congress's newest building, opened in 2007 and located in Culpeper, Virginia. It was constructed out of a former Federal Reserve storage center and Cold War bunker. The campus is designed to act as a single site to store all of the library's movie, television, and sound collections. It is named to honor David Woodley Packard, whose Packard Humanities Institute oversaw design and construction of the facility. The centerpiece of the complex is a reproduction Art Deco movie theater that presents free movie screenings to the public on a semi-weekly basis.</p>
+					</br></div>  
+				<div class="grid-item item4"><h2>LOC's Collections</h2>
+					<p>The library material classification system used is the Library of Congress Classification (LC Classification) which is also used by most specialized libraries and universities in the US.</></p>
+					<p>All publishers in the US are required to submit two copies of their publications to the Library of Congress which is called mandatory. On weekdays, the library receives almost 22,000 new issues. Every day only about 10,000 publications are considered appropriate. According to the Library of Congress, the collection occupies a rack which when added together is 850 km in length. While the British Library has 625 km of shelves. The Library of Congress has around 130 million library materials, 29 million of which are books. On a website called American Memory, the Library of Congress provides millions of electronic documents, including images, photographs, audio recordings, videos and web page archives, all of which are public domains. THOMAS is a website for searching all documents produced by Congress that include: draft law, the text of the Congressional Record and its index, as well as the status and summary of the bill.</p></div>
+				<div class="grid-item item5"><h2>LOC's User</h2>
+					<p>Open to the general public who want to do academic research, and there are tours available for interested visitors. Users need a "Reader Identity Card" to be able to enter the reading room and view collections. Users who are at least 16 years old can get the card at the Madison Building. The user's identity is proven by showing an identification card issued by the government (for example a driver's license, an identification card issued by the state, or passport). Collections in the reading room may not be taken outside the building or borrowed. Loans may only be made by members of Congress, US Supreme Court Justices, their staff, Congress Library staff, and other government agency officials.</p>
+					<img src="static/home/images/aboutus/reader-card-nolabel.jpg" alt="reader identification card"> <center>Library's research areas, including Computer Catalog Centers, and Copyright Office public service areas are each required to have a Reader Identification Card.</center></div>
+			  </div>
+		<div class="footer">
+		<h2 class>LOC's Online Databases</h2>
+		<p>Licensed and recommended free databases, indexing and abstracting services, and full-text reference resources.</p> <a href="http://eresources.loc.gov/">DATABASES: Library of Congress E-Resources Online Catalog</a>
+		</div>
+
+</body>
+
+</html>

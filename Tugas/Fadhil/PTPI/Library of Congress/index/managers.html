@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Managers</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/stylesheets/manager.CSS">
+<link rel="stylesheet" href="static/stylesheets/base.css">
+<link rel="icon" href="static/home/images/favicon/icons8-monitor-50.png" type="image/x-icon/">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/popover.js"></script>
+</head>
+<body id="manager-body">
+  <div id="loading"></div>
+       
+</div>
+<section class="programs">
+        <div class="header-logo">
+                <a href="index.html">
+                    <img src="https://www.loc.gov/static/images/logo-loc-new-branding.svg" alt="" />
+    <h2>Programs, services</h2>
+    <ul class="programs-items">
+        <li><a href="managers.html">Managers</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="indexdemo.html">Try Demo</a></li>
+    </ul>
+    <div class="programs-items-additional-wrapper"
+        id="more-programs-container"
+        aria-labelledby="more-programs-button">
+        <h2 tabindex="0"
+            role="heading"
+            id="more-programs-header">More Programs, services</h2>
+        <ul class="programs-items-additional">
+            <li><h3>Featured Programs</h3>
+                <ul>
+                    <li><a href="https://www.loc.gov/folklife/">American Folklife Center</a></li>
+                    <li><a href="https://www.loc.gov/vets/">Veterans History Project</a></li>
+                    <li><a href="https://www.wdl.org">World Digital Library</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="programs-items-additional">
+            <li><h3>Featured Topics</h3>
+                <ul>
+                    <li><a href="https://www.loc.gov/nls/">Braille &amp; Talking Books</a></li>
+                    <li><a href="https://www.loc.gov/poetry/">Poetry &amp; Literature</a></li>
+                    <li><a href="http://www.read.gov/cfb/">Literacy</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="programs-items-additional">
+            <li><h3>Especially For</h3>
+                <ul>
+                    <li><a href="https://www.loc.gov/librarians/">Librarians</a></li>
+                    <li><a href="https://www.loc.gov/loc/kluge/">Scholars</a></li>
+                    <li><a href="/families/">Kids &amp; Families</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <button class="more-programs"
+        id="more-programs-button"
+        aria-controls="more-programs-container"
+        ><span>More programs, services</span>
+        <i class="icon icon-angle-down"></i></button>
+</section>
+<script>
+        jQuery(function($){
+            // programs section
+            $('.more-programs').click(function() {
+                if ($('.programs-items-additional-wrapper').hasClass('programs-items-additional-active')) {
+        
+                    $('.programs-items-additional-wrapper')
+                        .removeClass('programs-items-additional-active')
+                        .attr('aria-hidden', 'true');
+                    $('.more-programs').attr('aria-expanded', 'false');
+                    $('.more-programs i').switchClass('icon-angle-up', 'icon-angle-down', 50);
+                    UX.interaction($(this), 'Programs and Services', 'Collapse', '');
+                } else {
+        
+                    $('.programs-items-additional-wrapper')
+                        .addClass('programs-items-additional-active')
+                        .attr('aria-hidden', 'false');
+                    $('.more-programs').attr('aria-expanded', 'true');
+                    $('.more-programs i').switchClass('icon-angle-down', 'icon-angle-up', 50);
+                    $('#more-programs-header').focus();
+                    UX.interaction($(this), 'Programs and Services', 'Expand', '');
+                }
+            });
+        
+            $('.programs-items li a').click(function() {
+                var label = $(this).text().trim();
+                UX.interaction($(this), 'Programs and Services', 'Click', label);
+            });
+            $('.programs-items-additional li a').click(function() {
+                var label = $(this).text().trim();
+                UX.interaction($(this), 'More Programs', 'Click', label);
+            });
+        });
+        </script>
+<div class="header">
+<h1 class="h1-man">Managers Library of Congress Profile</h1 c>
+</div>
+
+<br>
+<div class="card1" alt=" Gambar 1">
+  <img class="profile" src="static/home/images/managers/756398.jpg" alt="Director of Library" style="width: 100px;">
+  <h2 class="h2-man">Muhammad Fadhil Sulaiman</h2>
+  <article>
+  <p>
+    ID Card                  : 1906364035<br>
+    Position                 : Director of Library<br>
+    Nationality              : Indonesia<br>
+    Office Address           : 101 Independence Ave SE, Washington D. C. <br>
+    ZIP Code                 : 20540<br>
+    Website Address          : <a href="https://www.loc.gov/">Visit our Library of Congress</a><br>
+    </p>
+  </article>
+
+  
+<div>
+    <dl>
+        <a href="mailto:mfadhilsula@gmail.com" targer="blank">
+        <img src="static/home/images/managers/gmail.png" alt="E-mail : mfadhilsula@gmail.com" height="50px"></a>
+
+        <a href="https://instagram.com/mfadhilsula" target="blank">
+        <img src="static/home/images/managers/ig.png" alt="Instagram : mfadhilsula" height="50px"></a>
+
+        <a href="https://line.me/ti/p/~fadhillines" target="blank">
+        <img src="static/home/images/managers/line.png" alt="Line : fadhillines" height="50px"></a>
+
+        <a href="https://wa.me/6289661942571" target="blank">
+        <img src="static/home/images/managers/wa.png" alt="WhatsApp : 6289661942571" height="50px"></a>
+    </dl>
+</div> </br>
+
+<div class="card2" alt="Gambar 2">
+  <img class="profile" src="static/home/images/managers/138543.jpg" alt="Manager Staff Development" style="width:100px">
+  <h2 class="h2-man">Fina Idamatussilmi</h2>
+  <article>
+  <p>
+    ID Card                  : 1906304912<br>
+    Position                 : Manager Staff Development <br>
+    Nationality              : Indonesia<br>
+    Office Address           : 101 Independence Ave SE, Washington D. C. <br>
+    ZIP Code                 : 20540<br>
+    Website Address          : <a href="https://www.loc.gov/">Visit our Library of Congress</a><br>
+    </p>
+  </article>
+
+  
+<div>
+    <dl>
+        <a href="mailto:baeifine@gmail.com" targer="blank">
+        <img src="static/home/images/managers/gmail.png" alt="E-mail : baeifine@gmail.com" height="50px"></a>
+
+        <a href="https://instagram.com/fnsilmi" target="blank">
+        <img src="static/home/images/managers/ig.png" alt="Instagram : fnsilmi" height="50px"></a>
+
+        <a href="https://line.me/ti/p/~gurlck" target="blank">
+        <img src="static/home/images/managers/line.png" alt="Line : gurlck" height="50px"></a>
+
+        <a href="https://wa.me/6285800474675" target="blank">
+        <img src="static/home/images/managers/wa.png" alt="WhatsApp : 6285800474675" height="50px"></a>
+    </dl>
+</div>
+
+<div class="card3" alt="Gambar 3">
+  <img class="profile" src="static/home/images/managers/138542.jpg" alt="Manager Corporate Services" style="width:100px">
+  <h2 class="h2-man">Syahrani Nur Azizah</h2 c>
+  <article>
+  <p>
+    ID Card                  : 1906293796<br>
+    Position                 : Manager Corporate Services <br>
+    Nationality              : Indonesia<br>
+    Office Address           : 101 Independence Ave SE, Washington D. C. <br>
+    ZIP Code                 : 20540<br>
+    Website Address          : <a href="https://www.loc.gov/">Visit our Library of Congress</a><br>
+    </p>
+  </article>
+
+<div>
+    <dl>
+        <a href="mailto:syahraninurazizah@gmail.com" targer="blank">
+        <img src="static/home/images/managers/gmail.png" alt="E-mail : syahraninurazizah@gmail.com" height="50px"></a>
+
+        <a href="https://instagram.com/syahraninura" target="blank">
+        <img src="static/home/images/managers/ig.png" alt="Instagram : syahraninura" height="50px"></a>
+
+        <a href="https://line.me/ti/p/~syahraninurazizah" target="blank">
+        <img src="static/home/images/managers/line.png" alt="Line : syahraninurazizah" height="50px"></a>
+
+        <a href="https://wa.me/6283878046999" target="blank">
+        <img src="static/home/images/managers/wa.png" alt="WhatsApp : 6283878046999" height="50px"></a>
+    </dl>
+</div>
+</body>
+</html>
